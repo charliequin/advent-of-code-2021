@@ -1,1 +1,2 @@
-export { answer as answerOneA } from "./a";
+export { answer as answerTwoA } from "./a";
+export { answer as answerTwoB } from "./b";
