@@ -1,19 +1,19 @@
-import data from "./data.js";
+import data from './data.js';
 
 const getPosition = (data: string[]) => {
   let x = 0;
   let y = 0;
 
   data.map((curr) => {
-    const control = curr.split(" ")[0];
-    const value = Number(curr.split(" ")[1]);
+    const control = curr.split(' ')[0];
+    const value = Number(curr.split(' ')[1]);
 
     switch (control) {
-      case "forward":
+      case 'forward':
         return (x += value);
-      case "down":
+      case 'down':
         return (y += value);
-      case "up":
+      case 'up':
         return (y -= value);
       default:
         return;

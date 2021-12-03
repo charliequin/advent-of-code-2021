@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from './data.js';
 
 const countIncreasedValues = (data: string[]): number => {
   /**
@@ -7,13 +7,15 @@ const countIncreasedValues = (data: string[]): number => {
    */
   let increased = 1;
 
-  data.map((curr: string, idx: number, array: string[]): string | null => {
-    if (curr > array[idx - 1]) {
-      increased = increased + 1;
-    }
+  data.map(
+    (curr: string, idx: number, array: string[]): string | null => {
+      if (curr > array[idx - 1]) {
+        increased = increased + 1;
+      }
 
-    return null;
-  });
+      return null;
+    },
+  );
 
   return increased;
 };

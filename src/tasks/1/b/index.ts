@@ -1,6 +1,6 @@
-import { countIncreasedValues } from "../a/index.js";
+import { countIncreasedValues } from '../a/index.js';
 
-import data from "./data.js";
+import data from './data.js';
 
 const getSumOfTriplets = (data: string[]): string[] => {
   return data.map((curr, idx: number, array: string[]): string => {
@@ -11,12 +11,14 @@ const getSumOfTriplets = (data: string[]): string[] => {
      */
     if (idx >= 2) {
       const sum =
-        Number(curr) + Number(array[idx - 1]) + Number(array[idx - 2]);
+        Number(curr) +
+        Number(array[idx - 1]) +
+        Number(array[idx - 2]);
 
       return sum.toString();
     }
 
-    return "";
+    return '';
   });
 };
 

@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from './data.js';
 
 const getGammaRate = (data: string[], index: number): number => {
   /**
@@ -21,14 +21,14 @@ const getRates = (data: string[]) => {
   /**
    * Map over columns for data set size.
    */
-  const gammaRates = data[0].split("").map((_, idx) => {
+  const gammaRates = data[0].split('').map((_, idx) => {
     return getGammaRate(data, idx);
   });
 
   const epsilonRates = gammaRates.map((curr) => (curr === 0 ? 1 : 0));
 
-  const gammaRateConverted = parseInt(gammaRates.join(""), 2);
-  const epsilonRatesConverted = parseInt(epsilonRates.join(""), 2);
+  const gammaRateConverted = parseInt(gammaRates.join(''), 2);
+  const epsilonRatesConverted = parseInt(epsilonRates.join(''), 2);
 
   return {
     gamma: gammaRateConverted,

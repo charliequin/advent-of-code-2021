@@ -8,5 +8,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "rules": {}
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 70, "trailingComma": "all" }]
+  }
 }
