@@ -1,4 +1,5 @@
 import data from "./data.js";
+
 const countIncreasedValues = (data: string[]): number => {
   /**
    * The initial value is increased by default,

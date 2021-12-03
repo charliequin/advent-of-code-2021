@@ -1,5 +1,6 @@
-import data from "./data.js";
 import { countIncreasedValues } from "../a/index.js";
+
+import data from "./data.js";
 
 const getSumOfTriplets = (data: string[]): string[] => {
   return data.map((curr, idx: number, array: string[]): string => {
