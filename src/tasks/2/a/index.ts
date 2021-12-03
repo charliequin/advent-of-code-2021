@@ -4,22 +4,16 @@ const getPosition = (data: string[]) => {
   let x = 0;
   let y = 0;
 
-  const controls = {
-    FORWARD: "forward",
-    DOWN: "down",
-    UP: "up",
-  };
-
   data.map((curr) => {
     const control = curr.split(" ")[0];
     const value = Number(curr.split(" ")[1]);
 
     switch (control) {
-      case controls.FORWARD:
+      case "forward":
         return (x += value);
-      case controls.DOWN:
+      case "down":
         return (y += value);
-      case controls.UP:
+      case "up":
         return (y -= value);
       default:
         return;
