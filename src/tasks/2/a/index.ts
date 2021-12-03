@@ -12,7 +12,7 @@ const getPosition = (data: string[]) => {
 
   data.map((curr) => {
     const control = curr.split(" ")[0];
-    const value = parseInt(curr.split(" ")[1]);
+    const value = Number(curr.split(" ")[1]);
 
     switch (control) {
       case controls.FORWARD:

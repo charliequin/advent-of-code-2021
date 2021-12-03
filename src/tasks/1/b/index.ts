@@ -11,7 +11,7 @@ const getSumOfTriplets = (data: string[]): string[] => {
      */
     if (idx >= 2) {
       const sum =
-        parseInt(curr) + parseInt(array[idx - 1]) + parseInt(array[idx - 2]);
+        Number(curr) + Number(array[idx - 1]) + Number(array[idx - 2]);
 
       return sum.toString();
     }
