@@ -13,7 +13,6 @@ const getGammaRate = (data: string[], index: number): number => {
   /**
    * Check if number of 0s are greater than number of 1's to find the mode.
    */
-
   return mappedArr.length > data.length - mappedArr.length ? 0 : 1;
 };
 
